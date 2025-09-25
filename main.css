@@ -1,0 +1,38 @@
+/* main.css */
+  
+/* 메인 배너 이미지 */
+.main_banner, .main_banner img {width: 100%; height: auto;}
+
+/* 소메뉴 */
+.small_nav-ul li { padding: 0;border: none;}
+.small_nav-ul li button { color: #1e1e1e; width: 100%; height: auto;border: none;}
+.small_nav-ul li button:hover, .small_nav-ul li button:focus, .small_nav-ul li button:active { border: none;}
+.small_nav-ul li .nav-link.active, .small_nav-ul li .nav-link:focus, .small_nav-ul li .nav-link:hover { color: #d10d00; background-color: transparent; 
+  border-bottom: #d10d00 3px solid; width: 100%; height: auto;}
+
+  /* 신메뉴 */
+.new_menu_box {width: 100%; height: 820px; background-image: url(./img/main_page/01_menu.png); 
+    background-repeat: no-repeat; background-position: center; background-size: contain;  margin: 120px 0;}
+.nmd-t {font-size: 32px; font-family: 'Formula1 Display-Bold'; border-bottom: #1e1e1e 3px solid; margin-bottom: 2rem; }
+.nmd-b, .nmd-r {font-size: 15px;} 
+
+/* 추천 메뉴 */
+.recom_box {width: 100%; height: 700px; margin: 120px 0;} 
+.rec1 {margin: 0; padding: 0;}
+.rec2 > img {margin: 0 0 0 -23%; }
+/* padding: 10rem 0 0 0; */
+.rec3 img {margin: 0 0 0 -40%; padding-top: 3rem;}
+.rec-desc, .rec-desc2 {height: 10rem; padding-top: 3rem;}
+.rec-desc {margin-left: 10vw;}
+.rec-desc2 {margin-left: 5vw;}
+.rec-desc > span {font-family: 'Formula1 Display-Bold'; border-bottom: #1e1e1e 3px solid; font-size: 24px;}
+
+/* 메뉴 순위 */
+.menu_rank {width: 100%; height: 1060px; margin: 0; padding: 120px 0;
+    background-size: 100% auto; background-image: url(./img/main_page/03_bg.png); 
+    background-repeat: no-repeat; background-position: center; background-size: contain;} 
+.rank_title_box {width: 470px; text-align: left;}
+.rank_title_box img {width: auto; height: auto; align-items: center; margin-bottom: 1.5rem; padding: 0; }
+.black_box {width: 570px; height: fit-content; background-color: #00000085; padding: 2rem;} 
+.black_box p {color: #f6f3ee; height: fit-content; padding-top: 0.3rem;}
+.black_box td p { font-family: 'Formula1 Display-Regular';} 

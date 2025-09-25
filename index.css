@@ -1,0 +1,87 @@
+/* index.css */
+/* 기본 설정 */
+html {width: 100%; height: 100%; margin: 0; padding: 0;}
+body {color: #1e1e1e; background-color: #fbf3ee;  font-family: 'Formula1 Display-Bold';}
+.wrap {width: 100%; margin:0; padding: 0;}
+.container {width: 1170px; margin: auto; padding: 0;}
+.row { width: 100%; margin: 0; padding: 0; }
+a {color: #1e1e1e; text-decoration-line: none;}
+.dropdown-toggle::after {
+  display: none;
+} 
+p {margin: 0; padding: 0;}
+.transparent {background-color: transparent;}
+td, th, tr {background-color: #ffffff00 !important; align-items: center;}
+.title-box {width: 100%; height: 3rem; align-items: center;}
+.title-box img {width: auto; height: auto; align-items: center; margin-bottom: 1.5rem; padding: 0; }
+.default_title{font-size: 3rem; font-family: 'Formula1 Display-Black'; margin: 0; padding: 0;}
+a.btn {padding: 15px 30px; background-color: #d10d00; border: none; border-radius: 50px; color: #f6f3ee;}
+a.btn:hover {padding: 15px 30px; background-color: #fccd03; border: none; border-radius: 50px; color: #1e1e1e;}
+.nav-tabs, .nav-link, .nav-tabs .nav-link {border: none;}
+
+/* 페이퍼로지 폰트 전용 클래스 */
+.paperlogy { font-family: 'Paperlogy';}
+.regular {font-weight: 400;}
+.bold {font-weight: 700;}
+
+/* color */
+.tnt_black {color: #1e1e1e;}
+.tnt_red {color: #d10d00;}
+.tnt_white {color: #f6f3ee;}
+.tnt_gray {color: #999999;}
+
+/* border */
+.left_border_b {border-left: #1e1e1e solid 10px;}
+.left_border_r {border-left: #d10d00 solid 10px;}
+
+/* fonts imports */
+@font-face {
+  font-family: Formula1 Display-Regular;
+  src: url(./fonts/a5a7d0679f778e47-s.p.ttf) format('truetype');
+  font-weight: regular;
+}
+@font-face {
+  font-family: Formula1 Display-Bold;
+  src: url(./fonts/1f75a4dd429d77b6-s.p.ttf) format('truetype');
+  font-weight: bold;
+} 
+@font-face {
+  font-family: Formula1 Display-Italic;
+  src: url(./fonts/ad585708510478a8-s.p.ttf) format('truetype');
+  font-weight: italic;
+}
+@font-face {
+  font-family: Formula1 Display-Black;
+  src: url(./fonts/c6e2547e6fd7e039-s.p.ttf) format('truetype');;
+  font-weight: black;
+}
+@font-face {
+  font-family: Formula1 Display-Wide;
+  src: url(./fonts/fc1344fa9bb93795-s.p.ttf) format('truetype');;
+  font-weight: wide;
+}
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css");
+
+
+/* header */
+.head {width: 100%; height: auto;
+    font-family: 'Formula1 Display-Bold';} 
+.header_logo img {width: 100%; height: auto;} 
+.head_lnb {width: 100%; height: 50px; background-size: 100% auto; background-image: url(./img/header/top_banner_bg.jpg); 
+    background-repeat: no-repeat; background-position: center; background-size: contain;  padding-top: 0.7rem;}   
+.head_lnb_row a {color: #f6f3ee;}
+.head_lnb_row a:hover {color: #1e1e1e;}
+.head_lnb_ul0 a {padding-right: 1rem;}
+.head-lnb-ul1 a {padding-left: 1rem;} 
+/* .header-nav-box {padding-left: 2rem; } */
+.head-navbar { width: 100%; height: auto; padding-top: 2rem; padding-bottom: 0;}
+.head-navbar-nav {margin: auto; width: 100%; height: 60px; background-color: #1e1e1e; border-radius: 10px; 
+  border: 3px solid #999999; }
+.head-navbar-nav .nav-item {width: 100%;}
+.head-navbar-nav .nav-item > a { color: #999999; font-family: 'Paperlogy'; font-weight: 700;}
+.head-navbar-nav .nav-item > a:hover { color: #f6f3ee;}
+.head-navbar-nav .nav-item > a:focus, .head-navbar-nav .nav-item > a:active { color: #f6f3ee;}
+.deco-left {margin-left: 2rem;}
+.deco-right {margin-left: -2rem;}
+.nav-deco img {height: auto; width: 100px; margin: 0; padding: 2rem 0 0 0;} 
+.head-btn {border-radius: 50px;}
