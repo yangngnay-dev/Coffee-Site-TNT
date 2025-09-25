@@ -1,0 +1,45 @@
+/* index.css */
+html {width: 100%; height: 100%; margin: 0; padding: 0; 
+    font-family: 'Formula1 Display-Regular';}
+body {background-color: #fbf3ee;}
+.wrap {width: 100%; margin:0; padding: 0;}
+.container {width: 1170px; margin: auto;}
+
+/* fonts */
+@font-face {
+  font-family: Formula1 Display-Regular;
+  src: url(../fonts/a5a7d0679f778e47-s.p.ttf) format('truetype');
+  font-weight: regular;
+}
+@font-face {
+  font-family: Formula1 Display-Bold;
+  src: url(../fonts/1f75a4dd429d77b6-s.p.ttf) format('truetype');
+  font-weight: bold;
+} 
+@font-face {
+  font-family: Formula1 Display-Italic;
+  src: url(../fonts/ad585708510478a8-s.p.ttf) format('truetype');
+  font-weight: italic;
+}
+@font-face {
+  font-family: Formula1 Display-Black;
+  src: url(../fonts/c6e2547e6fd7e039-s.p.ttf) format('truetype');;
+  font-weight: black;
+}
+@font-face {
+  font-family: Formula1 Display-Wide;
+  src: url(../fonts/fc1344fa9bb93795-s.p.ttf) format('truetype');;
+  font-weight: wide;
+}
+
+/* header */
+.head {width: 100%; height: 200px;} 
+.top-banner {width: 100%; height: 50px; background-size: 100% auto; background-image: url(../img/header/top_banner.jpg); 
+    background-repeat: no-repeat; background-position: center; background-size: contain;}
+.top-banner .container {display: flex; color: #f6f3ee;} 
+.navbar-brand img {height: 50px;}
+.navbar {width: 100%; height: 150px;}
+.navbar-nav {margin: auto; height: 60px; background-color: #1e1e1e; border-radius: 10px;}
+.nav-item > a { color: #999999;}
+.nav-item > a:hover { color: #f6f3ee;}
+
