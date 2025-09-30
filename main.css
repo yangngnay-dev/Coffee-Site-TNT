@@ -5,7 +5,7 @@
 
 /* 소메뉴 */
 .small_nav-ul li { padding: 0;border: none;}
-.small_nav-ul li button { color: #1e1e1e; width: 100%; height: auto;border: none;}
+.small_nav-ul li button { color: #1e1e1e; width: 100%; height: auto;border: none; font-family: 'Paperlogy'; font-weight: 700;}
 .small_nav-ul li button:hover, .small_nav-ul li button:focus, .small_nav-ul li button:active { border: none;}
 .small_nav-ul li .nav-link.active, .small_nav-ul li .nav-link:focus, .small_nav-ul li .nav-link:hover { color: #d10d00; background-color: transparent; 
   border-bottom: #d10d00 3px solid; width: 100%; height: auto;}
@@ -30,9 +30,51 @@
 /* 메뉴 순위 */
 .menu_rank {width: 100%; height: 1060px; margin: 0; padding: 120px 0;
     background-size: 100% auto; background-image: url(./img/main_page/03_bg.png); 
-    background-repeat: no-repeat; background-position: center; background-size: contain;} 
-.rank_title_box {width: 470px; text-align: left;}
-.rank_title_box img {width: auto; height: auto; align-items: center; margin-bottom: 1.5rem; padding: 0; }
+    background-repeat: no-repeat; background-position: center; background-size: cover;} 
+.rank_title_box {width: 470px; text-align: left; display:flex;}
+.rank_title_box img {width: auto; height: 36px; align-items: center; margin-top: 1rem;}
 .black_box {width: 570px; height: fit-content; background-color: #00000085; padding: 2rem;} 
 .black_box p {color: #f6f3ee; height: fit-content; padding-top: 0.3rem;}
 .black_box td p { font-family: 'Formula1 Display-Regular';} 
+ 
+.agb_list { position: relative; height: 36px; margin-top: 20px; padding-top: 6px;
+    background: linear-gradient(90deg, #99999900, #999999ff); border-radius: 18px; }
+.agb_img { position: absolute; text-align: center; right: 0; bottom: 0; }
+.agb_img > p {color: #555555; font-size: 15px;} 
+.agb li:nth-child(1) { width: 270px; }
+.agb li:nth-child(2) { width: 370px; }
+.agb li:nth-child(3) { width: 470px; }
+.agb li:nth-child(4) { width: 570px; }
+.agb li:nth-child(5) { width: 770px; }
+.agb li:nth-child(6) { width: 970px; }
+.agb li:nth-child(6) p:nth-child(2) {color: #1e1e1e; font-size: 2rem;} 
+
+/* 모든 메뉴 카테고리 */
+.all_category {width: 100%; height: 700px; padding: 0; 
+    background-size: 100% auto; background-image: url(./img/main_page/04_bg.jpg); 
+    background-repeat: no-repeat; background-position: center; background-size: cover; }
+.category_ul { width: 100%;  height: 100%; margin: 0; display: flex; align-items: center;}
+.category_ul li { 
+  height: 100%; margin: auto; padding: 5rem 0 0 5rem; font-size: 1.5rem; 
+  flex-grow: 1; background-color: #00000070; position: relative; transition: all 300ms ease-in-out;
+  
+  &:hover {
+    flex-grow: 4.3; 
+    background-color: #d10d00;
+    mix-blend-mode: color-dodge; 
+  } 
+  
+  &:before {
+    content: attr(data-order);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+}
+
+/* 인스타그램 계정 (sns) 홍보 */
+.sns {margin: 120px 0; height: 800px; width: 100%}
+.sns_card {margin: auto; height: auto; width: 100%; height: fit-content;}
+.sns_card img {margin: auto; padding: 0; height: 600px; width: auto;} 

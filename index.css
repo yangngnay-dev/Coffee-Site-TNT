@@ -1,38 +1,4 @@
 /* index.css */
-/* 기본 설정 */
-html {width: 100%; height: 100%; margin: 0; padding: 0;}
-body {color: #1e1e1e; background-color: #fbf3ee;  font-family: 'Formula1 Display-Bold';}
-.wrap {width: 100%; margin:0; padding: 0;}
-.container {width: 1170px; margin: auto; padding: 0;}
-.row { width: 100%; margin: 0; padding: 0; }
-a {color: #1e1e1e; text-decoration-line: none;}
-.dropdown-toggle::after {
-  display: none;
-} 
-p {margin: 0; padding: 0;}
-.transparent {background-color: transparent;}
-td, th, tr {background-color: #ffffff00 !important; align-items: center;}
-.title-box {width: 100%; height: 3rem; align-items: center;}
-.title-box img {width: auto; height: auto; align-items: center; margin-bottom: 1.5rem; padding: 0; }
-.default_title{font-size: 3rem; font-family: 'Formula1 Display-Black'; margin: 0; padding: 0;}
-a.btn {padding: 15px 30px; background-color: #d10d00; border: none; border-radius: 50px; color: #f6f3ee;}
-a.btn:hover {padding: 15px 30px; background-color: #fccd03; border: none; border-radius: 50px; color: #1e1e1e;}
-.nav-tabs, .nav-link, .nav-tabs .nav-link {border: none;}
-
-/* 페이퍼로지 폰트 전용 클래스 */
-.paperlogy { font-family: 'Paperlogy';}
-.regular {font-weight: 400;}
-.bold {font-weight: 700;}
-
-/* color */
-.tnt_black {color: #1e1e1e;}
-.tnt_red {color: #d10d00;}
-.tnt_white {color: #f6f3ee;}
-.tnt_gray {color: #999999;}
-
-/* border */
-.left_border_b {border-left: #1e1e1e solid 10px;}
-.left_border_r {border-left: #d10d00 solid 10px;}
 
 /* fonts imports */
 @font-face {
@@ -63,6 +29,46 @@ a.btn:hover {padding: 15px 30px; background-color: #fccd03; border: none; border
 @import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css");
 
 
+/* 기본 설정 */
+html {width: 100%; height: 100%; margin: 0; padding: 0;}
+body {color: #1e1e1e; background-color: #fbf3ee; font-family: 'Formula1 Display-Bold';}
+.wrap {width: 100%; margin:0; padding: 0;}
+.container {width: 1170px; height: 100%; margin: auto; padding: 0;}
+.row { width: 100%; margin: 0; padding: 0; }
+a {color: #1e1e1e; text-decoration-line: none; display: inline-block; width: fit-content; margin: 0 auto; }
+.dropdown-toggle::after {
+  display: none;
+}  
+p {margin: 0; padding: 0;}
+span {margin: 0; padding: 0; display: flex;}
+.transparent {background-color: transparent;}
+td, th, tr {background-color: #ffffff00 !important; align-items: center;}
+.title-box {width: 100%; height: 4rem; display: flex;}
+.title-box img {width: auto; height: 36px; align-items: center; padding: 0; margin-top: 1rem;}
+.default_title{font-size: 3rem; font-family: 'Formula1 Display-Black'; margin: 0; padding: 0;}
+a.btn {padding: 15px 30px; background-color: #d10d00; border: none; border-radius: 50px; color: #f6f3ee;}
+a.btn:hover {padding: 15px 30px; background-color: #fccd03; border: none; border-radius: 50px; color: #1e1e1e;}
+.nav-tabs, .nav-link, .nav-tabs .nav-link {border: none;}
+dl, dt, dd {margin: 0 !important; padding: 0 !important;}
+
+/* 페이퍼로지 폰트 전용 클래스 */
+.paperlogy { font-family: 'Paperlogy';}
+.regular {font-weight: 400;}
+.bold {font-weight: 700;}
+
+/* color */
+.tnt_black {color: #1e1e1e;}
+.tnt_red {color: #d10d00;}
+.tnt_white {color: #f6f3ee;}
+.tnt_gray {color: #999999;}
+
+/* border */
+.left_border_b {border-left: #1e1e1e solid 10px;}
+.left_border_r {border-left: #d10d00 solid 10px;}
+
+
+
+
 /* header */
 .head {width: 100%; height: auto;
     font-family: 'Formula1 Display-Bold';} 
@@ -85,3 +91,22 @@ a.btn:hover {padding: 15px 30px; background-color: #fccd03; border: none; border
 .deco-right {margin-left: -2rem;}
 .nav-deco img {height: auto; width: 100px; margin: 0; padding: 2rem 0 0 0;} 
 .head-btn {border-radius: 50px;}
+
+
+/* footer */
+.foot {width: 100%; height: 500px;}  
+.footer_title {font-size: 2rem; font-family: 'Formula1 Display-Black';}  
+.footer_line {margin: 0; padding: 0; height: 1rem;} 
+.fnt a {font-size: 14px; margin-bottom: 0.5rem;}
+.fna a {font-size: 14px; font-family: 'Paperlogy'; font-weight: 400;}
+.fnt a:hover, .fna a:hover {color: #d10d00;}
+.foot_a {width: 100%; height: auto; background-color: #DDDAD5;}
+.foot_b {width: 100%; min-height: auto; background-color: #B7B5B2;}
+.foot_c {width: 100%; height: auto; background-color: #000000; font-family: 'Formula1 Display-Regular'; color: #999999; margin: auto; }
+.foot_c a {color: #999999; margin: auto;}
+.sns_icon {margin: auto; width: 100%;} 
+.sns_icon i {font-size: 25px; margin: 0.5rem;}
+.ftt_tr td {padding: 0; text-align: center;}
+.ftt_tr td img {margin: auto; max-width:70px; max-height: 70px;}
+.contact {width: 100%; height: auto; margin: 0; padding: 0;} 
+.contact dd, .foot_c p { font-family: 'Formula1 Display-Regular'; font-size: 14px;}   

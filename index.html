@@ -222,12 +222,12 @@
         </div>
         <!-- 메인 배너 끝 -->
 
-        <div class="small_nav">
+        <div class="small_nav" >
           <div class="container">
             <ul class="nav nav-tabs row small_nav-ul" id="myTab" role="tablist">
               <li class="nav-item col-3" role="presentation">
                 <button
-                  class="nav-link active"
+                  class="nav-link active scroll-button"
                   id="home-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#home-tab-pane"
@@ -235,13 +235,15 @@
                   role="tab"
                   aria-controls="home-tab-pane"
                   aria-selected="true"
+                  data-target="#new_menu"
                 >
                   신메뉴
                 </button>
+                <a href="#menu1">menu1</a>
               </li>
               <li class="nav-item col-3" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link scroll-button"
                   id="profile-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#profile-tab-pane"
@@ -249,13 +251,14 @@
                   role="tab"
                   aria-controls="profile-tab-pane"
                   aria-selected="false"
+                  data-target="#recom_box"
                 >
                   추천 메뉴
                 </button>
               </li>
               <li class="nav-item col-3" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link scroll-button"
                   id="contact-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#contact-tab-pane"
@@ -263,13 +266,14 @@
                   role="tab"
                   aria-controls="contact-tab-pane"
                   aria-selected="false"
+                  data-target="#menu_rank"
                 >
-                  베스트 메뉴
+                  메뉴 순위
                 </button>
               </li>
               <li class="nav-item col-3" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link scroll-button"
                   id="contact-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#contact-tab-pane"
@@ -277,8 +281,9 @@
                   role="tab"
                   aria-controls="contact-tab-pane"
                   aria-selected="false"
+                  data-target="#sns"
                 >
-                  더 많은 소식
+                  SNS 구독
                 </button>
               </li>
             </ul>
@@ -294,7 +299,7 @@
         <!-- 소메뉴 끝 -->
 
         <div class="main_content">
-          <div class="new_menu">
+          <div class="new_menu" id="new_menu">
             <div class="container">
               <div class="new_menu_box">
                 <div class="title-box">
@@ -378,7 +383,7 @@
           </div>
           <!-- 신메뉴 끝 -->
 
-          <div class="recom_box">
+          <div class="recom_box" id="recom_box">
             <div class="container">
               <div class="title-box text-end">
                 <span class="default_title">RECOMMANDATIONS</span>
@@ -399,12 +404,13 @@
                   </div>
                   <div class="col-4 rec2">
                     <div class="rec-desc">
-                      <span>Super Red Max</span>
+                      <span>Super Red Max
                       <img
-                        class="text-center"
+                        style="width: auto; height: 1.5rem; " 
+                        class="text-end"
                         src="./img/main_page/02_redbull_logo.png"
                         alt=""
-                      />
+                      /></span>
                     </div>
                     <img src="./img/main_page/02_recom_2.png" alt="" />
                   </div>
@@ -426,8 +432,10 @@
             </div>
           </div>
           <!-- 추천 메뉴 끝  -->
+          <a id="menu1"></a>
 
-          <div class="menu_rank">
+          
+          <div class="menu_rank" id="menu_rank">
             <div class="container">
               <div class="row">
                 <div class="col-6">
@@ -450,7 +458,10 @@
                             </p>
                           </th>
                           <th>
-                            <p class="paperlogy bold text-end" style="font-size: 17px">
+                            <p
+                              class="paperlogy bold text-end"
+                              style="font-size: 17px"
+                            >
                               인기도
                             </p>
                           </th>
@@ -463,7 +474,7 @@
                         <tr>
                           <td>
                             <p style="font-family: 'Formula1 Display-Bold'">
-                              NO RISK, FULL RUSH
+                              No Risk, Full Rush
                             </p>
                           </td>
                           <td>
@@ -498,27 +509,10 @@
                         </tr>
                         <tr>
                           <td>
-                            <p>Just an Inchident</p>
+                            <p>Smooth Operator</p>
                           </td>
                           <td>
-                            <p class="text-end">169.821</p>
-                          </td>
-                          <td>
-                            <a
-                              href="#"
-                              class="btn btn-danger"
-                              style="padding: 4px 8px"
-                            >
-                              VOTE
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p>Just an Inchident</p>
-                          </td>
-                          <td>
-                            <p class="text-end">169.821</p>
+                            <p class="text-end">155,363</p>
                           </td>
                           <td>
                             <a
@@ -532,10 +526,10 @@
                         </tr>
                         <tr>
                           <td>
-                            <p>Just an Inchident</p>
+                            <p>Must Be The Water</p>
                           </td>
                           <td>
-                            <p class="text-end">169.821</p>
+                            <p class="text-end">96,116</p>
                           </td>
                           <td>
                             <a
@@ -549,10 +543,27 @@
                         </tr>
                         <tr>
                           <td>
-                            <p>Just an Inchident</p>
+                            <p>Ollie To Earth</p>
                           </td>
                           <td>
-                            <p class="text-end">169.821</p>
+                            <p class="text-end">87,121</p>
+                          </td>
+                          <td>
+                            <a
+                              href="#"
+                              class="btn btn-danger"
+                              style="padding: 4px 8px"
+                            >
+                              VOTE
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Monaco Baby</p>
+                          </td>
+                          <td>
+                            <p class="text-end">44,116</p>
                           </td>
                           <td>
                             <a
@@ -570,16 +581,320 @@
                   </div>
                 </div>
               </div>
+              <!-- row 끝 -->
+
+              <ul class="agb list-unstyled">
+                <li class="agb_list">
+                  Monaco Baby
+                  <div class="agb_img">
+                    <p>P6</p>
+                    <img src="./img/main_page/03_coffee (4).png" alt="P6" />
+                  </div>
+                </li>
+                <li class="agb_list">
+                  Ollie To Earth
+                  <div class="agb_img">
+                    <p>P5</p>
+                    <img src="./img/main_page/03_coffee (3).png" alt="P5" />
+                  </div>
+                </li>
+                <li class="agb_list">
+                  Must Be The Water
+                  <div class="agb_img">
+                    <p>P4</p>
+                    <img src="./img/main_page/03_coffee (1).png" alt="P4" />
+                  </div>
+                </li>
+                <li class="agb_list">
+                  Smooth Operator
+                  <div class="agb_img">
+                    <p>P3</p>
+                    <img src="./img/main_page/03_coffee (5).png" alt="P3" />
+                  </div>
+                </li>
+                <li class="agb_list">
+                  Just an Inchident
+                  <div class="agb_img">
+                    <p>P2</p>
+                    <img src="./img/main_page/03_coffee (6).png" alt="P2" />
+                  </div>
+                </li>
+                <li class="agb_list">
+                  No Risk, Full Rush
+                  <div class="agb_img">
+                    <img src="./img/main_page/03_most_popular.png" />
+                    <p>P1</p>
+                    <img src="./img/main_page/03_coffee (2).png" alt="P1" />
+                  </div>
+                </li>
+              </ul>
+              <!-- 
+              <div class="check_line">
+                <img src="./img/main_page/03_check_line.png" />
+              </div>
+               -->
+              <!-- 커피 어워드 끝 -->
+
+              <div></div>
             </div>
           </div>
           <!-- 메뉴 순위 끝 -->
+
+          <div class="all_category" id="all_category">
+            <div class="container">
+              <ul
+                class="category_ul list-unstyled d-flex tnt_white paperlogy bold"
+              >
+                <li>커피와 음료<br />Coffee<br />& Ade<br />& Iced Tea</li>
+                <li>주류 메뉴<br />Alchohol</li>
+                <li>케이크 & 빵<br />Cake<br />& Bread</li>
+                <li>쿠키 & 디저트<br />Cookie<br />& Dessert</li>
+              </ul>
+            </div>
+          </div>
+          <!-- 모든 커피 메뉴 카테고리 끝 -->
+
+          <div class="sns" id="sns">
+            <div class="container">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                  <div class="title-box">
+                    <span class="default_title">FOLLOW US</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <img
+                    class="pt-3"
+                    src="./img/main_page/05_check_right.png"
+                    alt="check_right"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <div class="col">
+                    <img
+                      class="pt-3"
+                      src="./img/main_page/05_check_left.png"
+                      alt="check_left"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="title-box">
+                    <span class="default_title">
+                      ON OUR <span class="tnt_red">&nbsp; INSTARGAM!</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="sns_card text-center">
+                  <img src="./img/main_page/05_sns_card.png" alt="sns_card" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- sns 계정 홍보 섹션 끝 -->
         </div>
-        <!-- 메인 메뉴 내용 끝 -->
+        <!-- 메인 페이지 내용 끝 -->
       </div>
       <!-- 섹션 끝 -->
 
       <!-- footer  -->
-      <div class="foot">footer</div>
+      <div class="foot">
+        <div class="footer_line text-end">
+          <img src="./img/footer/footer_line_sm.png" alt="footer_line" />
+        </div>
+        <div class="foot_a py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <p class="footer_title">SITE MAP</p>
+              </div>
+              <div class="col-2">
+                <ul class="footer_nav list-unstyled">
+                  <li class="fnt"><a href="#">ABOUT US</a></li>
+                  <li class="fna"><a href="#">브랜드 스토리</a></li>
+                  <li class="fna"><a href="#">브랜드 가치</a></li>
+                  <li class="fna"><a href="#">커뮤니티</a></li>
+                  <li class="fna"><a href="#">체험존</a></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <ul class="footer_nav list-unstyled">
+                  <li class="fnt"><a href="#">FORMULA 1</a></li>
+                  <li class="fna"><a href="#">포뮬라원이란?</a></li>
+                  <li class="fna"><a href="#">챔피언 소개</a></li>
+                  <li class="fna"><a href="#">그랑 프리</a></li>
+                  <li class="fna"><a href="#">굿즈 스토어</a></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <ul class="footer_nav list-unstyled">
+                  <li class="fnt"><a href="#">MENU</a></li>
+                  <li class="fna"><a href="#">신메뉴</a></li>
+                  <li class="fna"><a href="#">추천 메뉴</a></li>
+                  <li class="fna"><a href="#">베스트 셀러</a></li>
+                  <li class="fna"><a href="#">쿠키 & 디저트</a></li>
+                  <li class="fna"><a href="#">OUR SNS</a></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <ul class="footer_nav list-unstyled">
+                  <li class="fnt"><a href="#">HELP & SERVICE</a></li>
+                  <li class="fna"><a href="#">자주 묻는 질문</a></li>
+                  <li class="fna"><a href="#">1:1 문의</a></li>
+                  <li class="fna"><a href="#">QnA 게시판</a></li>
+                  <li class="fna"><a href="#">AI 챗봇</a></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <ul class="footer_nav list-unstyled">
+                  <li class="fnt"><a href="#">MY PAGE</a></li>
+                  <li class="fna"><a href="#">주문 내역</a></li>
+                  <li class="fna"><a href="#">포인트 적립</a></li>
+                  <li class="fna"><a href="#">회원 수정/탈퇴</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot_b py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <img src="./img/footer/footer_logo.png" alt="" />
+              </div>
+              <div class="col-7">
+                <p class="footer_title">OUR<br />PARTNERS</p>
+                <table class="table table-borderless my-3">
+                  <tbody>
+                    <tr class="ftt_tr">
+                      <td>
+                        <img
+                          style="mix-blend-mode: darken"
+                          src="./img/footer/footer_icon (1).png"
+                          alt="partner1"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon-(13).png"
+                          alt="partner13"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon-(14).png"
+                          alt="partner14"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (2).png"
+                          alt="partner2"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (3).png"
+                          alt="partner3"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (4).png"
+                          alt="partner4"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          style="mix-blend-mode: darken"
+                          src="./img/footer/footer_icon (5).png"
+                          alt="partner5"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="ftt_tr">
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (6).png"
+                          alt="partner6"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (7).png"
+                          alt="partner7"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (8).png"
+                          alt="partner8"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (9).png"
+                          alt="partner9"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (10).png"
+                          alt="partner10"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (11).png"
+                          alt="partner11"
+                        />
+                      </td>
+                      <td>
+                        <img
+                          src="./img/footer/footer_icon (12).png"
+                          alt="partner12"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-3">
+                <p class="footer_title">CONTACT<br />US</p>
+                <dl class="row contact my-3">
+                  <dt class="col-2 col-sm-3 py-3">
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="font-size: 1.8rem"
+                    ></i>
+                  </dt>
+                  <dd class="col-4 col-sm-9 py-2">
+                    Centum City, Busan, <br />South Korea
+                  </dd>
+                  <dt class="col-2 col-sm-3 py-1 px-1">
+                    <i
+                      class="fa-solid fa-phone-volume"
+                      style="font-size: 1.5rem"
+                    ></i>
+                  </dt>
+                  <dd class="col-4 col-sm-9 py-1">XXX-XXXX-1234</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foot_c tnt_white text-center py-4">
+          <p>®2026 Track & Talk Coffee Company. All Rights Reserved</p>
+          <div class="sns_icon text-center">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
       <!-- 푸터 끝 -->
     </div>
   </body>
@@ -590,3 +905,20 @@
   integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
   crossorigin="anonymous"
 ></script>
+<script>
+  const scrollLinks = document.querySelectorAll(".scroll-button");
+
+  scrollLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.dataset.target;
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  });
+</script>
