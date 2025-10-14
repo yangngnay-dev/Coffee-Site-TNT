@@ -1,112 +1,102 @@
 /* index.css */
 
 /* fonts imports */
-@font-face {
-  font-family: Formula1 Display-Regular;
-  src: url(./fonts/a5a7d0679f778e47-s.p.ttf) format('truetype');
-  font-weight: regular;
-}
-@font-face {
-  font-family: Formula1 Display-Bold;
-  src: url(./fonts/1f75a4dd429d77b6-s.p.ttf) format('truetype');
-  font-weight: bold;
-} 
-@font-face {
-  font-family: Formula1 Display-Italic;
-  src: url(./fonts/ad585708510478a8-s.p.ttf) format('truetype');
-  font-weight: italic;
-}
-@font-face {
-  font-family: Formula1 Display-Black;
-  src: url(./fonts/c6e2547e6fd7e039-s.p.ttf) format('truetype');;
-  font-weight: black;
-}
-@font-face {
-  font-family: Formula1 Display-Wide;
-  src: url(./fonts/fc1344fa9bb93795-s.p.ttf) format('truetype');;
-  font-weight: wide;
-}
-@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css");
-
-
-/* 기본 설정 */
-html {width: 100%; height: 100%; margin: 0; padding: 0;}
-body {color: #1e1e1e; background-color: #fbf3ee; font-family: 'Formula1 Display-Bold';}
-.wrap {width: 100%; margin:0; padding: 0;}
-.container {width: 1170px; height: 100%; margin: auto; padding: 0;}
-.row { width: 100%; margin: 0; padding: 0; }
-a {color: #1e1e1e; text-decoration-line: none; display: inline-block; width: fit-content; margin: 0 auto; }
-.dropdown-toggle::after {
-  display: none;
-}  
-p {margin: 0; padding: 0;}
-span {margin: 0; padding: 0; display: flex;}
-.transparent {background-color: transparent;}
-td, th, tr {background-color: #ffffff00 !important; align-items: center;}
-.title-box {width: 100%; height: 4rem; display: flex;}
-.title-box img {width: auto; height: 36px; align-items: center; padding: 0; margin-top: 1rem;}
-.default_title{font-size: 3rem; font-family: 'Formula1 Display-Black'; margin: 0; padding: 0;}
-a.btn {padding: 15px 30px; background-color: #d10d00; border: none; border-radius: 50px; color: #f6f3ee;}
-a.btn:hover {padding: 15px 30px; background-color: #fccd03; border: none; border-radius: 50px; color: #1e1e1e;}
-.nav-tabs, .nav-link, .nav-tabs .nav-link {border: none;}
-dl, dt, dd {margin: 0 !important; padding: 0 !important;}
+@font-face { font-family: Formula1 Display-Regular; src: url(./fonts/a5a7d0679f778e47-s.p.ttf) format('truetype'); font-weight: regular; } 
+@font-face { font-family: Formula1 Display-Bold; src: url(./fonts/1f75a4dd429d77b6-s.p.ttf) format('truetype'); font-weight: bold; } 
+@font-face { font-family: Formula1 Display-Italic; src: url(./fonts/ad585708510478a8-s.p.ttf) format('truetype'); font-weight: italic; } 
+@font-face { font-family: Formula1 Display-Black; src: url(./fonts/c6e2547e6fd7e039-s.p.ttf) format('truetype');; font-weight: black; } 
+@font-face { font-family: Formula1 Display-Wide; src: url(./fonts/fc1344fa9bb93795-s.p.ttf) format('truetype');; font-weight: wide; } 
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css"); /* 기본 설정 */
+html { width: 100%; height: 100%; margin: 0; padding: 0; } 
+body { color: #1e1e1e; background-color: #fbf3ee; font-family: 'Formula1 Display-Bold'; } 
+.wrap { width: 100%; margin:0; padding: 0; } 
+.container { width: auto; height: 100%; margin: auto; padding: 0; } 
+.row { width: 100%; margin: 0; padding: 0; } 
+a { color: #1e1e1e; text-decoration-line: none; display: inline-block; width: fit-content; margin: 0 auto; } 
+.dropdown-toggle::after { display: none; } 
+p { margin: 0; padding: 0; } 
+span { margin: 0; padding: 0; display: flex; } 
+.transparent { background-color: transparent; } 
+td, th, tr { background-color: #ffffff00 !important; align-items: center; } 
+.title-box { width: 100%; height: 4rem; display: flex; } 
+.title-box img { width: auto; height: 36px; align-items: center; padding: 0; margin-top: 1rem; } 
+.default_title { font-size: 3rem; font-family: 'Formula1 Display-Black'; margin: 0; padding: 0; } 
+a.btn { padding: 12px 20px; background-color: #d10d00; border: none; border-radius: 50px; color: #f6f3ee; } 
+a.btn:hover { background-color: #fccd03; border: none; border-radius: 50px; color: #1e1e1e; } 
+.nav-tabs, .nav-link, .nav-tabs .nav-link { border: none; } 
+dl, dt, dd { margin: 0 !important; padding: 0 !important; } 
 
 /* 페이퍼로지 폰트 전용 클래스 */
-.paperlogy { font-family: 'Paperlogy';}
-.regular {font-weight: 400;}
-.bold {font-weight: 700;}
+.paperlogy { font-family: 'Paperlogy'; } 
+.regular { font-weight: 400; } 
+.bold { font-weight: 700; } 
 
 /* color */
-.tnt_black {color: #1e1e1e;}
-.tnt_red {color: #d10d00;}
-.tnt_white {color: #f6f3ee;}
-.tnt_gray {color: #999999;}
+.tnt_black { color: #1e1e1e; } 
+.tnt_red { color: #d10d00; } 
+.tnt_white { color: #f6f3ee; } 
+.tnt_gray { color: #999999; } 
 
 /* border */
-.left_border_b {border-left: #1e1e1e solid 10px;}
-.left_border_r {border-left: #d10d00 solid 10px;}
+.left_border_b { border-left: #1e1e1e solid 10px; } 
+.left_border_r { border-left: #d10d00 solid 10px; } 
 
 
 
 
+/* includes */
+/* */
 /* header */
-.head {width: 100%; height: auto;
-    font-family: 'Formula1 Display-Bold';} 
-.header_logo img {width: 100%; height: auto;} 
-.head_lnb {width: 100%; height: 50px; background-size: 100% auto; background-image: url(./img/header/top_banner_bg.jpg); 
-    background-repeat: no-repeat; background-position: center; background-size: contain;  padding-top: 0.7rem;}   
-.head_lnb_row a {color: #f6f3ee;}
-.head_lnb_row a:hover {color: #1e1e1e;}
-.head_lnb_ul0 a {padding-right: 1rem;}
-.head-lnb-ul1 a {padding-left: 1rem;} 
-/* .header-nav-box {padding-left: 2rem; } */
-.head-navbar { width: 100%; height: auto; padding-top: 2rem; padding-bottom: 0;}
-.head-navbar-nav {margin: auto; width: 100%; height: 60px; background-color: #1e1e1e; border-radius: 10px; 
-  border: 3px solid #999999; }
-.head-navbar-nav .nav-item {width: 100%;}
-.head-navbar-nav .nav-item > a { color: #999999; font-family: 'Paperlogy'; font-weight: 700;}
-.head-navbar-nav .nav-item > a:hover { color: #f6f3ee;}
-.head-navbar-nav .nav-item > a:focus, .head-navbar-nav .nav-item > a:active { color: #f6f3ee;}
-.deco-left {margin-left: 2rem;}
-.deco-right {margin-left: -2rem;}
-.nav-deco img {height: auto; width: 100px; margin: 0; padding: 2rem 0 0 0;} 
-.head-btn {border-radius: 50px;}
-
+.head { width: 100%; height: auto; font-family: 'Formula1 Display-Bold'; } 
+.header_logo img { width: 100%; height: auto; } 
+.head_lnb { width: 100%; height: fit-content; min-height: 50px; background-size: 100% auto; padding-top: 0.7rem; background: linear-gradient(90deg, #B5A385, #AEA6A6); } 
+.head_lnb_row, .head_lnb_row row {width: 100%; height: fit-content; padding: 0;}
+.head_lnb_row a { color: #f6f3ee; } 
+.head_lnb_row a:hover { color: #1e1e1e; } 
+.head_lnb_ul0 a { padding-right: 1rem; } 
+.head-lnb-ul1 a { padding-left: 1rem; } 
+.head-navbar { width: 100%; height: auto; padding-top: 2rem; padding-bottom: 0; } 
+.head-navbar-nav { margin: auto; width: 100%; height: fit-content; min-height: 60px; background-color: #1e1e1e; border-radius: 10px; border: 3px solid #999999; } 
+.head-navbar-nav .nav-item { width: 100%; text-align: center; padding: 5px 0; } 
+.head-navbar-nav .nav-item > a { width: 70%; color: #999999; font-family: 'Paperlogy'; font-weight: 700; text-align: center; } 
+.head-navbar-nav .nav-item > a:hover { color: #d10d00; } 
+.head-navbar-nav .nav-item > a:focus, .head-navbar-nav .nav-item > a:active { color: #f6f3ee; } 
+.deco-left { margin-left: 3rem; } 
+.deco-right { margin-left: -3rem; } 
+.nav-deco img { height: auto; width: 100px; margin: 2rem 0 0 0; } 
+.head-btn { border-radius: 50px; } 
+.nav-gbn { width: fit-content; height: auto; } 
+.head-dm li a { font-family: 'Paperlogy'; font-weight: 500; text-align: center; &:hover { color: #d10d00; background-color: transparent; } 
+&:focus, &:active { background-color: #d10d00; color: #f6f3ee; } 
+ }
 
 /* footer */
-.foot {width: 100%; height: 500px;}  
-.footer_title {font-size: 2rem; font-family: 'Formula1 Display-Black';}  
-.footer_line {margin: 0; padding: 0; height: 1rem;} 
-.fnt a {font-size: 14px; margin-bottom: 0.5rem;}
-.fna a {font-size: 14px; font-family: 'Paperlogy'; font-weight: 400;}
-.fnt a:hover, .fna a:hover {color: #d10d00;}
-.foot_a {width: 100%; height: auto; background-color: #DDDAD5;}
-.foot_b {width: 100%; min-height: auto; background-color: #B7B5B2;}
-.foot_c {width: 100%; height: auto; background-color: #000000; font-family: 'Formula1 Display-Regular'; color: #999999; margin: auto; }
-.foot_c a {color: #999999; margin: auto;}
-.sns_icon {margin: auto; width: 100%;} 
-.sns_icon i {font-size: 25px; margin: 0.5rem;}
-.ftt_tr td {padding: 0; text-align: center;}
-.ftt_tr td img {margin: auto; max-width:70px; max-height: 70px;}
-.contact {width: 100%; height: auto; margin: 0; padding: 0;} 
-.contact dd, .foot_c p { font-family: 'Formula1 Display-Regular'; font-size: 14px;}   
+.foot { width: 100%; height: 500px; } 
+.footer_title { font-size: 2rem; font-family: 'Formula1 Display-Black'; } 
+.footer_line { margin: 0; padding: 0; height: 1rem; } 
+.fnt a { font-size: 14px; margin-bottom: 0.5rem; } 
+.fna a { font-size: 14px; font-family: 'Paperlogy'; font-weight: 400; } 
+.fnt a:hover, .fna a:hover { color: #d10d00; } 
+.foot_a { width: 100%; height: auto; background-color: #DDDAD5; } 
+.foot_b { width: 100%; min-height: auto; background-color: #B7B5B2; } 
+.foot_c { width: 100%; height: auto; background-color: #000000; font-family: 'Formula1 Display-Regular'; color: #999999; margin: auto; } 
+.foot_c a { color: #999999; margin: auto; } 
+.sns_icon { margin: auto; width: 100%; } 
+.sns_icon i { font-size: 25px; margin: 0.5rem; } 
+.ftt_tr td { padding: 0; text-align: center; } 
+.ftt_tr td img { margin: auto; width: 100%; max-width:70px; height:auto; } 
+.contact { width: 100%; height: auto; margin: 0; padding: 0; } 
+.contact dd, .foot_c p { font-family: 'Formula1 Display-Regular'; font-size: 14px; } 
+
+
+/* // Large devices (desktops, 992px and up) 1000 데스크탑 */ 
+@media (max-width: 992px) { /* HEADER */
+ .head_lnb_row a, .head_lnb_row span { font-size: 12px; } 
+ .nav-deco { display: none; } 
+
+/* FOOTER */
+.footer_line img { margin: 0; padding: 0; height: auto; width: 70%; } 
+.footer_title { font-size: 1rem; } 
+.footer_nav li a { font-size: 12px; } 
+.footer_table { width: 100%; } 
+ }
