@@ -1,0 +1,21 @@
+/* sub1.css */
+
+.sub_content, .wc, .gp, .cc, .merch {margin: 120px auto; width: 100%; padding: 0;}
+.title_li img {margin-top: -1.5rem;} 
+.img-box {} 
+
+.f1_box { height: max-content; max-height: 700px; color: #fbf3ee; border: none;} 
+.f1 { height: 100%; background-size: 100% auto; background-image: url(./img/sub1/01_f1_bg2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.f2f3 { height: 100%; }
+.f2 { padding: 55px 0 0 0; height: auto; background-size: 100% auto; background-image: url(./img/sub1/01_f2_bg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.f3 { padding: 10px 0 0 0; height: auto; background-size: 100% auto; background-image: url(./img/sub1/01_f3_bg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.f2 p, .f3 p {}
+.f1 p { padding: 2rem; }
+.f1 p:first-child {padding-bottom: 50px; font-family: Formula1 Display-Wide; font-size: 2rem;}
+.f1 p::nth-child(3), .f1 p::nth-child(4) {font-size: 20px;}   
+.fit {font-family: Formula1 Display-Italic; font-size: 7VW; color: #fbf3ee52; mix-blend-mode: hard-light; width: 100%;}
+.mini_d { mix-blend-mode: darken; }
+
+@media (max-width: 992px){ 
+.f2, .f3 { padding: 150px 0 50px 0;}
+}
