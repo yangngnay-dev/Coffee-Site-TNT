@@ -57,10 +57,11 @@
 /* // Large devices (desktops, 992px and up) 1000 데스크탑 */ 
 @media (max-width: 992px) { 
  .title-box img, .rank_title_box img { height: 1.3rem; margin-top: 0.2rem; } 
+ .recom_box, .menu_rank, .sns {margin: 4rem 0; padding: 0; }
  
  /* 신메뉴 */
-.new-menu-coffee img { padding: 0; } 
-.new_menu_box { background: transparent } 
+.new-menu-coffee img { padding: 0; }  
+.new_menu_box { background: transparent; margin: 15px 0; } 
 .new-menu-desc { text-align: left !important; } 
 .nmd-t { text-align: left !important; } 
 .new-menu-desc > img { width: 100%; height: auto; margin: 0 !important; } 
@@ -68,13 +69,13 @@
 .new-menu-desc2 p { margin: 0 !important; } 
 .new-menu-desc2 table { margin: 0 !important; width: 100%; height:auto; } 
 .new-menu-desc2 table * { font-size: 12px; } 
-.tdp { width: auto !important; } 
-.rec-1, .rec-2, .rec-3 { width: 100%; padding: 2rem; } 
+.tdp { width: auto !important; }  
 
 /* 추천메뉴 */
-.rec-1, .rec-2, .rec-3 { margin: 0; } 
+.rec-1, .rec-2, .rec-3 { width: 100%; padding: 0 3rem ; margin: 0; } 
 .black_box { padding: 1rem } 
 .black_box table * { font-size: 13px; } 
+.rec-desc, .rec-desc2 {margin: 1rem 0; padding: 0; height: auto;}
 
 /* 메뉴 인기순위 */
 .agb { zoom: 0.8; } 
@@ -84,7 +85,7 @@
 .agb li:nth-child(3) { width: 57%; } 
 .agb li:nth-child(4) { width: 66%; } 
 .agb li:nth-child(5) { width: 80%; } 
-.agb li:nth-child(6) { width: 100%; } 
+.agb li:nth-child(6) { width: 100%; }  
 
 /* 카테고리 */ 
 .all_category { height: 400px; width: 100%; } 

@@ -1,0 +1,10 @@
+/* sub2.css */
+.m120 {padding: 0; margin: 120px auto; background-color: #f6f3ee;}
+.p120 {margin: 0; padding: 120px auto; background-color: #f6f3ee;}
+.brand-intro p:first-child {font-family: 'Formula1 Display-Black'; font-weight: black; }
+.sub-2 { background-size: 100% auto; background-image: url(./img/sub2/04_bg.png); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.sub-3, .sub-4 { background-image: url(./img/sub2/05_06_check2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+
+@media (max-width: 992px) {
+    .sub-1, .sub-2, .sub-3, .sub-4 {margin: 4rem 0; padding: 0;}
+}

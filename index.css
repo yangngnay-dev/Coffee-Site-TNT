@@ -10,7 +10,7 @@
 html { width: 100%; height: 100%; margin: 0; padding: 0; } 
 body { color: #1e1e1e; background-color: #fbf3ee; font-family: 'Formula1 Display-Bold'; } 
 .wrap { width: 100%; margin:0; padding: 0; } 
-.wrap img {max-width: 100%;}
+.wrap img { max-width: 100%; } 
 .container { width: auto; height: 100%; margin: auto; padding: 0; } 
 .row { width: 100%; margin: 0; padding: 0; } 
 a { color: #1e1e1e; text-decoration-line: none; display: inline-block; width: fit-content; margin: 0 auto; } 
@@ -23,7 +23,7 @@ td, th, tr { background-color: #ffffff00 !important; align-items: center; }
 .title-box { width: 100%; display: flex; } 
 .title-box img { width: auto; height: 36px; align-items: center; padding: 0; margin-top: 1rem; } 
 .default_title { font-size: 3rem; font-family: 'Formula1 Display-Black'; margin: 0; padding: 0; } 
-a.btn { padding: 12px 20px; background-color: #d10d00; border: none; border-radius: 50px; color: #f6f3ee; } 
+a.btn { padding: 12px 20px; border: none; border-radius: 50px; color: #f6f3ee; } 
 a.btn:hover { background-color: #fccd03; border: none; border-radius: 50px; color: #1e1e1e; } 
 .nav-tabs, .nav-link, .nav-tabs .nav-link { border: none; } 
 dl, dt, dd { margin: 0 !important; padding: 0 !important; } 
@@ -31,13 +31,16 @@ dl, dt, dd { margin: 0 !important; padding: 0 !important; }
 /* 페이퍼로지 폰트 전용 클래스 */
 .paperlogy { font-family: 'Paperlogy'; } 
 .regular { font-weight: 400; } 
+.medium { font-weight: 500; } 
 .bold { font-weight: 700; } 
+.black { font-weight: 900; } 
 
 /* color */
 .tnt_black { color: #1e1e1e; } 
 .tnt_red { color: #d10d00; } 
 .tnt_white { color: #f6f3ee; } 
 .tnt_gray { color: #999999; } 
+.tnt_yellow { color: #fccd03; } 
 
 /* border */
 .left_border_b { border-left: #1e1e1e solid 10px; } 
@@ -63,17 +66,17 @@ dl, dt, dd { margin: 0 !important; padding: 0 !important; }
 .head-navbar-nav .nav-item > a { width: 70%; color: #999999; font-family: 'Paperlogy'; font-weight: 700; text-align: center; } 
 .head-navbar-nav .nav-item > a:hover { color: #d10d00; } 
 .head-navbar-nav .nav-item > a:focus, .head-navbar-nav .nav-item > a:active { color: #f6f3ee; } 
-.deco-left { margin-left: 3rem; } 
-.deco-right { margin-left: -3rem; } 
+/* .deco-left { margin-right: -3rem; }  */
+.deco-right { margin-left: -2rem; } 
 .nav-deco img { height: auto; width: 100px; margin: 2rem 0 0 0; } 
-.head-btn { border-radius: 50px; } 
+.head-btn { border-radius: 50px; background-color: #d10d00; } 
 .nav-gbn { width: fit-content; height: auto; } 
 .head-dm li a { font-family: 'Paperlogy'; font-weight: 500; text-align: center; &:hover { color: #d10d00; background-color: transparent; } 
 &:focus, &:active { background-color: #d10d00; color: #f6f3ee; } 
  }
 
 /* footer */
-.foot { width: 100%; height: 500px; } 
+.foot { width: 100%; height: 500px; /* padding-top: 120px; */ } 
 .footer_title { font-size: 2rem; font-family: 'Formula1 Display-Black'; } 
 .footer_line { margin: 0; padding: 0; height: 1rem; } 
 .fnt a { font-size: 14px; margin-bottom: 0.5rem; } 
@@ -92,7 +95,8 @@ dl, dt, dd { margin: 0 !important; padding: 0 !important; }
 .footer_ul { width: 100%; height: fit-content; margin: 0; padding: 0; } 
 .footer_ul li { height: fit-content; width: fit-content; padding: 0.2rem; margin: 0; } 
 .footer_ul li a, .footer_ul li a img { width: 100%; height: 50px; margin: auto; padding: 0; } 
-.ftnone { display: none; } 
+.fnn { display: none; } 
+.mnn { display: block; } 
 
 /* 메인 배너 이미지 */
 .main_banner, .main_banner img { width: 100%; height: fit-content; margin: auto; text-align: center; } 
@@ -105,11 +109,14 @@ dl, dt, dd { margin: 0 !important; padding: 0 !important; }
 .small_nav-ul li a { color: #999999; width: 100%; height: auto; border: none; font-family: 'Paperlogy'; font-weight: 700; padding: auto 5rem; } 
 .small_nav-ul li a:hover, .small_nav-ul li a:focus, .small_nav-ul li a:active { border: none; } 
 
-
+.mobile-toggle { display: none; } 
 
 /* // Large devices (desktops, 992px and up) 1000 데스크탑 */ 
 @media (max-width: 992px){
  .default_title { font-size: 1.3rem; } 
+ .small_nav .small_nav-ul li .nav-link, 
+ .small_nav .small_nav-ul li .nav-link.active { padding: 15px 0; font-size: 14px; } 
+.mobile-toggle { display: block; } 
  
  /* 배너 */
  .main_banner { width: 100%; height: 400px; overflow-x: hidden; } 
@@ -124,5 +131,6 @@ dl, dt, dd { margin: 0 !important; padding: 0 !important; }
 .footer_title { font-size: 1rem; margin-top: 1rem; } 
 .footer_nav li a { font-size: 12px; } 
 .footer_table { width: 100%; } 
-.ftnone { display: block; } 
+.fnn { display: block; } 
+.mnn { display: none; } 
  }
