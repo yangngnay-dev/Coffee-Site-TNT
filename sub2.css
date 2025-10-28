@@ -1,0 +1,5 @@
+/* sub2.css */
+.m120 {padding: 0; margin: 120px auto;}
+.p120 {margin: 0; padding: 120px auto;}
+.brand-intro p:first-child {font-family: 'Formula1 Display-Black'; font-weight: black; }
+.sub-4 { background-size: 100% auto; background-image: url(./img/sub2/04_bg.png); background-repeat: no-repeat; background-position: center; background-size: cover; }
