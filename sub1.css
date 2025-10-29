@@ -2,6 +2,10 @@
 .sub_content, .wc, .gp, .cc, .merch, .sub-6 { margin: 120px auto; width: 100%; padding: 0; } 
 .title_li img { margin-bottom: 1.6rem; } 
 .img-box { } 
+/* sub1.css */ 
+.sub_content, .wc, .gp, .cc, .merch, .sub-6 { margin: 120px auto; width: 100%; padding: 0; } 
+.title_li img { margin-bottom: 1.6rem; } 
+.img-box { } 
 
 .f1_box { height: max-content; color: #fbf3ee; border: none; } 
 .f1 { height: 100%; background-size: 100% auto; background-image: url(./img/sub1/01_f1_bg2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; } 
